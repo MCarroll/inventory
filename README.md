@@ -1,4 +1,5 @@
 
+### Story
 Where I work our warehouses are fields and vacant parking lots. There are 3000 total items that we are tracking.  1500 items were manufactured and moved to our facilities and will be consumed by the product we are manufacturing. As these items are consumed the final product is then moved out of the factory and into these warehouses. 
 
 The products we manufacture are the size of a large aircraft wing or medium-size truck. 
@@ -7,8 +8,10 @@ Some items have been pulled from the production line, because of technical issue
 
 Monthly drone photos are taken of our open-air warehouses and a manual count is taken. This manual count is then transcribed into an excel spreadsheet. 
 
-A new MES system is coming online, but its inventory processing is weak. 
+### Prototype View
+![Prototype View](./Prototype_View.png)
 
+### Data
 This table is representative of how that data is structured. 
 
 | code  | warehouse | section | item |
@@ -35,4 +38,7 @@ This table is representative of how that data is structured.
 | P1243 | West      | B       | wing |
 | P1244 | West      | C       | wing |
 | P1250 | West      | C       | wing |
+
+### Rails Server
+bin/dev
 
