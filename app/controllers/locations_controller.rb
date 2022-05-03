@@ -1,6 +1,6 @@
 class LocationsController < ApplicationController
   def index
-    @locations = Location.select(:warehouse, "count(:code)").group(:warehouse)
+    @locations = Location.select(:warehouse).group(:warehouse).count
   end
 
   def new

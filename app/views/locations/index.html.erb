@@ -4,7 +4,7 @@
   <div class=" columns-4">
     <% if @locations.any? %>
       <% @locations.each do |wh| %>
-        <%= wh.warehouse %>
+        <%= wh[0] %>
       <% end %>
     <% else %>
       <%= render 'locations/no_locations' %>
