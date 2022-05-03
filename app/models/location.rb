@@ -1,6 +1,6 @@
 class Location < ApplicationRecord
-  scope :wings, -> { where(item: "Wing") }
-  scope :boxes, -> { where(item: "Box") }
+  scope :with_wings, -> { where(item: "Wing") }
+  scope :with_boxes, -> { where(item: "Box") }
   def self.import(file)
     require "csv"
     CSV.foreach(file.path, headers: true) do |row|
