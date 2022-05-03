@@ -3,10 +3,12 @@ class LocationsController < ApplicationController
     @locations = Location.all
   end
 
+  def new
+  end
+
   def import
-    Location.import
-    location.import(params[:file])
-    flash[:notice] = "Locations CSV imported successfully"
+    Location.import(params[:file])
+    flash[:notice] = "Successfully imported CSV file."
     redirect_to locations_path
   end
 end

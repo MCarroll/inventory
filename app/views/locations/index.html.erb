@@ -1,0 +1,13 @@
+<div class=" relative">
+  <div class="text-3xl font-extrabold text-blue-400" pb-6>Inventory locations</div>
+  <div class="flex border-4 rounded-md w-full h-96 p-6 break-after-right">Image Place Holder</div>
+  <div class=" columns-4">
+    <% if @locations.any? %>
+      <% @locations.each do |wh| %>
+        <%= wh.warehouse %>
+      <% end %>
+    <% else %>
+      <%= render 'locations/no_locations' %>
+    <% end %>
+  </div>
+</div>
